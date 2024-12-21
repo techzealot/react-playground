@@ -11,9 +11,15 @@ import {
 } from "@techzealot/mini-shadcn-ui";
 
 //!自定义css需在组件之后引入方能覆盖组件css否则无效
+import { useEffect, useRef } from "react";
 import "./App.css";
+import TestRef from "./components/test-ref";
 
 function App() {
+  const ref = useRef(null);
+  useEffect(() => {
+    console.log(ref.current);
+  }, []);
   return (
     <div className="flex flex-col gap-8">
       <div>
@@ -41,6 +47,7 @@ function App() {
           </DialogFooter>
         </DialogContent>
       </Dialog>
+      <TestRef ref={ref} />
     </div>
   );
 }
