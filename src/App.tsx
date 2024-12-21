@@ -15,7 +15,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="bg-red">
+    <div className="flex flex-col gap-8">
       <div>
         <Button>Click me</Button>
       </div>
@@ -34,7 +34,7 @@ function App() {
           <DialogFooter>
             <Button>Ok</Button>
             <DialogClose asChild>
-              <Button className="bg-rose-600/50 hover:bg-rose-600/80">
+              <Button className="bg-red-400/70 hover:bg-red-900/90">
                 Cancel
               </Button>
             </DialogClose>

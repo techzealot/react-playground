@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* !此处使用dark mode 配色验证用户自定义主题是否生效*/
 :root {
   --background: 0 0% 3.9%;
